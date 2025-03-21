@@ -8,7 +8,7 @@ const App = () => {
   const secondaryY = useTransform(scrollY, [0, 1000], ["0%", "-40%"]); 
 
   return (
-    <div className="w-screen min-h-screen bg-black font-body">
+    <div className="w-screen min-h-screen bg-black font-body overflow-y-hidden">
       <Hero />
       <motion.div
         style={{ y: secondaryY }}
